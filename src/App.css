@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/satisfy-v6-latin/satisfy-v6-latin-regular.woff2') format('woff2'),
+       url('/fonts/satisfy-v6-latin/satisfy-v6-latin-regular.woff') format('woff'),
+       url('/fonts/satisfy-v6-latin/satisfy-v6-latin-regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'poiret-one';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/poiret-one-v4-latin/poiret-one-v4-latin-regular.woff2') format('woff2'),
+       url('/fonts/poiret-one-v4-latin/poiret-one-v4-latin-regular.woff') format('woff'),
+       url('/fonts/poiret-one-v4-latin/poiret-one-v4-latin-regular.ttf') format('truetype');
+}
+
+/* oxygen-regular - latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/oxygen-v6-latin/oxygen-v6-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Oxygen Regular'), local('Oxygen-Regular'),
+       url('/fonts/oxygen-v6-latin/oxygen-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/oxygen-v6-latin/oxygen-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/oxygen-v6-latin/oxygen-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/oxygen-v6-latin/oxygen-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/oxygen-v6-latin/oxygen-v6-latin-regular.svg#Oxygen') format('svg'); /* Legacy iOS */
+}
+/* oxygen-700 - latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/oxygen-v6-latin/oxygen-v6-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Oxygen Bold'), local('Oxygen-Bold'),
+       url('/fonts/oxygen-v6-latin/oxygen-v6-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/oxygen-v6-latin/oxygen-v6-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/oxygen-v6-latin/oxygen-v6-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/oxygen-v6-latin/oxygen-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/oxygen-v6-latin/oxygen-v6-latin-700.svg#Oxygen') format('svg'); /* Legacy iOS */
+}
+
+.Bold {
+  font-weight: bold;
+}
+
+.Hidden {
+  display: none;
+}
+
+
+.App {
+  background-color: #0084b4;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+
+.Data-page {
+  background-color: #f2f2f2;
+  //position: fixed;
+  width: 100%;
+
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Banner-Avatar-Holder{
+  position: relative;
+  max-height: 388px;
+}
+
+.Banner{
+  position: relative;
+  max-height: 388px !important;
+}
+
+.Alt-banner {
+  position: relative;
+  height: 178px;
+  background-color: #1DA1F2 !important;
+}
+
+.Avatar-Container {
+  position: absolute;
+  bottom: -40px;
+  width: 120px;
+  left:50%;
+  margin-left: -60px;
+}
+
+.Avatar {
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+}
+
+.Divider {
+  margin-top: 50px !important;
+  font-family: 'poiret-one', Fallback, sans-serif;
+  font-size: 120%;
+  text-align: center;
+  color: grey;
+}
+
+.Description-text {
+  max-width: 150px !important;
+}
+
+.Content-container {
+  margin: 5px 5px !important;
+}
+
+.Site-sign {
+  font-family: 'Satisfy', Fallback, sans-serif;
+  font-size: 500%;
+  text-align: center;
+  color: white;
+}
+
+.Site-sign-grid {
+  padding-bottom: 0px!important;
+}
+
+.Site-intro-grid {
+  padding-top: 0px!important;
+}
+
+.Site-intro {
+  font-family: 'poiret-one', Fallback, sans-serif;
+  text-align:right;
+  color:#c0deed;
+}
+
+.Get-Poiret {
+  font-family: 'poiret-one', Fallback, sans-serif;
+}
+
+.EndOfScroll {
+  font-family: 'poiret-one', Fallback, sans-serif;
+  //font-size: 120%;
+  text-align: center;
+  color: grey;
+}
+.Search-bar {
+  width : 100%;
+}
+
+.Centered {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.NotFound {
+  font-family: 'poiret-one', Fallback, sans-serif;
+  font-size: 120%;
+  text-align: center;
+}
+
+.Active{
+  font-family: 'Oxygen',  Fallback, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #0084b4;
+}
+
+.Inactive {
+  font-family: 'Oxygen',  Fallback, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: grey;
+}
