@@ -1,7 +1,7 @@
 # doch_frontend
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-The app, created with ReactJS and Semantic-UI, provides a simple UI for [doch_backend](/doch_backend). 
+The app, created with ReactJS and Semantic-UI, provides a simple UI for [doch_backend](https://github.com/shuchenliu/doch_backend). 
 
 It generates stats analysis for any Twitter user.
 
