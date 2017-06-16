@@ -1,5 +1,4 @@
 # doch_frontend
--
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 The app, created with ReactJS and Semantic-UI, provides a simple UI for [doch_backend](/doch_backend). 
