@@ -5,7 +5,7 @@ The app, created with ReactJS and Semantic-UI, provides a simple UI for [doch_ba
 
 It generates stats analysis for any Twitter user.
 
-#features
+# features
 1. Basic twitter user info. 
 2. Interactive charts for user's tweets from past week.
 3. An inifite-scroll style user imeline with options to sort by different criteria.
