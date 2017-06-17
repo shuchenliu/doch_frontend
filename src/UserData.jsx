@@ -103,7 +103,7 @@ class UserData extends Component {
             </Header>
           </Dimmer>
           <div className='Banner-Avatar-Holder'>
-                  <Banner bannerUrl={this.imgUrlMaker('banner', this.state.user.id)} />
+                  <Banner noBanner={!this.state.user.bannerUrl} bannerUrl={this.imgUrlMaker('banner', this.state.user.id)} />
                   <Avatar avatarUrl={this.imgUrlMaker('avatar', this.state.user.id)} />
           </div>
           <Description description={this.state.user.description} />

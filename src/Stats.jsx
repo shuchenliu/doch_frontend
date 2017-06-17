@@ -181,7 +181,7 @@ class Stats extends Component {
               <Label as='a' color='red' ribbon='right'>
                 Statistics
               </Label>
-              <Image src='paragraph.png' hidden={this.state.statsFetched}/>
+              <Image src='/static/paragraph.png' hidden={this.state.statsFetched}/>
                   <DataRep
                     statsFetched={this.state.statsFetched}
                     error={this.state.error}
@@ -201,7 +201,7 @@ class Stats extends Component {
                          textAlign='center'
                          color='red'
                          loading={!this.state.statsFetched}>
-                  <Image src='paragraph.png' hidden={this.state.statsFetched}/>
+                  <Image src='static/paragraph.png' hidden={this.state.statsFetched}/>
                   <Details
                     statsFetched={this.state.statsFetched}
                     stats={this.state.weekStats}

@@ -101,14 +101,14 @@ class SpecialTweets extends Component {
                 <Label as='a' color='orange' ribbon>
                   Most Favorited Tweet from past 7 days
                 </Label>
-                <Image src='paragraph.png' hidden={this.state.error || this.state.favHTML !== -1}/>
+                <Image src='static/paragraph.png' hidden={this.state.error || this.state.favHTML !== -1}/>
                 {favContent}
               </Segment>
               <Segment raised loading={this.state.rtHTML === -1 && !this.state.error} >
                 <Label as='a' color='pink' ribbon>
                   Most Retweeted Tweet from past 7 days
                 </Label>
-                <Image src='paragraph.png' hidden={this.state.error || this.state.rtHTML !== -1}/>
+                <Image src='static/paragraph.png' hidden={this.state.error || this.state.rtHTML !== -1}/>
                 {rtContent}
               </Segment>
 

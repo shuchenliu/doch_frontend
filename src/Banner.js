@@ -12,8 +12,8 @@ class Banner extends Component {
     let contentShown = (
       <div className='Alt-banner'> </div>
     );
-    
-    if (this.props.bannerUrl) {
+
+    if (!this.props.noBanner) {
        contentShown = <Image  className='Banner' fluid src={this.props.bannerUrl} alt='Banner'/>
     }
 

@@ -393,8 +393,8 @@ class Timeline extends Component {
           <Label as='a' color='purple' ribbon='right'>
             Recent Tweets
           </Label>
-          <Image src='paragraph.png' hidden={this.state.firstHtmlFetched || this.state.error}/>
-          <Image src='paragraph.png' hidden={this.state.firstHtmlFetched || this.state.error}/>
+          <Image src='static/paragraph.png' hidden={this.state.firstHtmlFetched || this.state.error}/>
+          <Image src='static/paragraph.png' hidden={this.state.firstHtmlFetched || this.state.error}/>
           {contentShown}
           <Loader active={this.props.dataFetched
                         && this.state.firstHtmlFetched
