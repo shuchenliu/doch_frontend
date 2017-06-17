@@ -22,6 +22,7 @@ class UserData extends Component {
     };
     this.handleStats = this.handleStats.bind(this);
     this.goHome = this.goHome.bind(this);
+    this.imgUrlMaker = this.imgUrlMaker.bind(this);
   }
 
   handleStats(data) {
@@ -81,6 +82,12 @@ class UserData extends Component {
  goHome() {
    this.props.history.push('/');
  }
+
+ imgUrlMaker(type, id) {
+    const url = '/static/img/' + type + '/' + id + '.png';
+    return url;
+ }
+
   render() {
        return (
         <div className='Data-page'>
@@ -96,8 +103,8 @@ class UserData extends Component {
             </Header>
           </Dimmer>
           <div className='Banner-Avatar-Holder'>
-                  <Banner bannerUrl={this.state.user.bannerUrl} />
-                  <Avatar avatarUrl={this.state.user.avatarUrl} />
+                  <Banner bannerUrl={this.imgUrlMaker('banner', this.state.user.id)} />
+                  <Avatar avatarUrl={this.imgUrlMaker('avatar', this.state.user.id)} />
           </div>
           <Description description={this.state.user.description} />
 
