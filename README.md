@@ -16,5 +16,6 @@ It generates stats analysis for any Twitter user.
 2. Google ads to be randomly displayed in user's timeline.
 3. Fix possible Tweets rendering issue on mobile platform. Ultimately make tweets rendering Twitter-api independent.
 4. On landing page, make search deletion faster.
-Try demo here: [doch.co](http://doch.co)
+
+# Try demo here: [doch.co](http://doch.co)
 
