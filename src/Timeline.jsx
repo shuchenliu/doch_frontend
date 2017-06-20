@@ -21,6 +21,7 @@ class Timeline extends Component {
     };
     this.currentPage = 0;
     this.totalPage = -1;
+    this.firstRender = true;
     this.getNextFiveTweets = this.getNextFiveTweets.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
     this.sortByDate = this.sortByDate.bind(this);
@@ -59,14 +60,14 @@ class Timeline extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-
     if (nextProps.dataFetched && nextProps.stats === -1) {
 
       this.setState({
         error: true,
       });
 
-    } else if (nextProps.dataFetched) {
+    } else if (nextProps.dataFetched && this.firstRender) {
+      this.firstRender = false;
       this.totalPage = Math.ceil(nextProps.stats.tweets.length / 5);
       this.currentPage = 0;
       this.setState({
@@ -88,6 +89,7 @@ class Timeline extends Component {
 
 
   getNextFiveTweets() {
+    console.log(this.currentPage);
     if (this.totalPage === this.currentPage)
       return;
 

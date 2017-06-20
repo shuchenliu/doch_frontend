@@ -15,5 +15,5 @@ It generates stats analysis for any Twitter user.
 1. More data types and interactive options for the data representaion
 2. Google ads to be randomly displayed in user's timeline.
 
-Try demo here: [doch.co](http://doch.co) (under construction)
+Try demo here: [doch.co](http://doch.co)
 

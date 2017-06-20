@@ -11,7 +11,7 @@ class SpecialTweets extends Component {
       rtHTML: -1,
       error: false,
     };
-
+    this.rendered = false;
     this.getSpecialTweets = this.getSpecialTweets.bind(this);
   }
 
@@ -24,7 +24,8 @@ class SpecialTweets extends Component {
       this.setState({
         error: true,
       });
-    } else if (nextProps.dataFetched) {
+    } else if (nextProps.dataFetched && !this.rendered) {
+      this.rendered = true;
       this.getSpecialTweets(nextProps.stats);
     }
   }
